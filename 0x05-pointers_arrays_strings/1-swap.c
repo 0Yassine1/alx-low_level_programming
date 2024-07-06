@@ -1,9 +1,3 @@
-/*
- * File: 1-swap.c
- * Auth: Zakaria AIT ALI [zakariaaitali555@gmail.com]
- *
- */
-
 #include "main.h"
 
 /**
