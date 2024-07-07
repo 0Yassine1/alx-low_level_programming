@@ -1,22 +1,16 @@
-include "main.h"
+#include "main.h"
 
-  /** 
-   * print_rev- print reversed string, followed by a new line
-   * @s: pointer to the string to point 
-   * Return: void
-   */
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    char *str;
 
-   void _print_rev(char *s) 
-  {
-     int swap;
-
-     int i = 0;
-     while (s[i]) 
-            i++;
-  while (i--) 
-{  
-      _putchar(s[i]);
-  } 
-     _putchar('/n');
-
-  } }
+    str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+    print_rev(str);
+    return (0);
+}
+Compilation and T
