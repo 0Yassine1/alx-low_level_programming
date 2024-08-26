@@ -1,12 +1,5 @@
 #include "main.h"
 
-/**
- * print_diagsums - this prints all th sums of square array diagonal efficiently only.
- *
- * @a: this is a pointer only.
- * @size: this is a size only.
- */
-
 void print_diagsums(int *a, int size)
 {
 	int i, sumd1 = *a, sumd2 = 0;

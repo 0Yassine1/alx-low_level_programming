@@ -1,11 +1,5 @@
 #include <stdio.h>
-/**
- *main - entry
- *
- *Description: prints the first 98 Fibonacci numbers
- *
- *Return: 0 (success)
- */
+
 int main(void)
 {
 	long i, j, a, b, tail, head, sum;
@@ -20,9 +14,7 @@ int main(void)
 		j = sum;
 		printf("%li, ", sum);
 	}
-	/**
-	 *We need to split the number because it overpass the size of long int
-	 */
+	
 	a = i % 10000000000;
 	i = i / 10000000000;
 	b = j % 10000000000;

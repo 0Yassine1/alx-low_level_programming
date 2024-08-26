@@ -1,11 +1,5 @@
 #include <stdio.h>
-/**
- *main - entry
- *
- *Description: prints the first 50 Fibonacci numbers
- *
- *Return: 0 (success)
- */
+
 int main(void)
 {
 	long int i, j, sum;
