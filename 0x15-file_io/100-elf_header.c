@@ -17,7 +17,6 @@ void print_type(unsigned int e_type, unsigned char *e_ident);
 void print_entry(unsigned long int e_entry, unsigned char *e_ident);
 void close_elf(int elf);
 
-
 void check_elf(unsigned char *e_ident)
 {
 	int index;
@@ -34,6 +33,7 @@ void check_elf(unsigned char *e_ident)
 		}
 	}
 }
+
 
 void print_magic(unsigned char *e_ident)
 {
@@ -72,7 +72,6 @@ void print_class(unsigned char *e_ident)
 		printf("<unknown: %x>\n", e_ident[EI_CLASS]);
 	}
 }
-
 
 void print_data(unsigned char *e_ident)
 {
@@ -153,7 +152,6 @@ void print_osabi(unsigned char *e_ident)
 	}
 }
 
-
 void print_abi(unsigned char *e_ident)
 {
 	printf("  ABI Version:                       %d\n",
@@ -219,6 +217,7 @@ void close_elf(int elf)
 		exit(98);
 	}
 }
+
 
 int main(int __attribute__((__unused__)) argc, char *argv[])
 {

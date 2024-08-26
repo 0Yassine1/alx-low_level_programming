@@ -1,21 +1,25 @@
 #include "main.h"
-#include <stdlib.h>
+
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	char *buf;
-	ssize_t fd;
-	ssize_t w;
-	ssize_t t;
+	int fd, readed;
+	char *buff = malloc(sizeof(char *) * letters);
 
-	fd = open(filename, O_RDONLY);
+	if (!buff)
+		return (0);
+
+	if (!filename)
+		return (0);
+
+	fd = open(filename, O_RDONLY, 0600);
 	if (fd == -1)
 		return (0);
-	buf = malloc(sizeof(char) * letters);
-	t = read(fd, buf, letters);
-	w = write(STDOUT_FILENO, buf, t);
 
-	free(buf);
+	readed = read(fd, buff, letters);
+	write(STDOUT_FILENO, buff, readed);
+
+	free(buff);
 	close(fd);
-	return (w);
+	return (readed);
 }
