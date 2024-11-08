@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -So $CFILE > .o
+gcc -c $CFILE > .o
