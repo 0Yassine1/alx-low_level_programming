@@ -1,2 +1,3 @@
 #!/bin/bash
+set -x
 gcc -c "$CFILE" -o "${CFILE%.c}.o"
